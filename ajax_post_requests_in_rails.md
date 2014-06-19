@@ -16,7 +16,7 @@
    		var name = $this.find("#user_name").val();
    		var phone = $this.find("#user_phone").val();
 	
-		$.post('/users', { user: {name: name, phone: phone } } ) 
+		$.post('/users', { user: { name: name, phone: phone } } ) 
 		
 3.  In the controller layer, parse the incoming parameters and render the appropriate response as a json object (inside user_controller.rb): 
 
