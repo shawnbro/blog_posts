@@ -1,6 +1,6 @@
 # Ajax Post Requests in Rails
 
-### ** Making asynchronous Javascript get & post requests is easy with jQuery... Here's a 4 step guide to making posts without reloading the page (assuming your models/views/controllers are already set up). **
+### *Completing asynchronous Javascript CRUD actions is easy with jQuery... Here's a 4 step guide to making posts without reloading the page (assuming your models/views/controllers are already set up).* 
 <br>
 
 1. Add a Javascript event listener to the form's submit action and prevent the form's default behavior (an HTTP post request) upon submission:  (the following is a user sign up route implemented using Ajax, ".new_user" is the class of the form element.)
@@ -11,6 +11,10 @@
 		    e.preventDefault();
 
 2.  Instead make a post request using jQuery & include your model's parameters as arguments to be passed to the controller:	
+		    
+	    var $this = $(this);
+   		var name = $this.find("#user_name").val();
+   		var phone = $this.find("#user_phone").val();
 	
 		$.post('/users', { user: {name: name, phone: phone } } ) 
 		
@@ -22,8 +26,6 @@
 		    if @user.save
 		      render json: { status: 'success' }
 		    else
-		      @user = User.new
-		      @poll = Poll.last
 		      render json: { status: 'failure' }
 		    end
 		end
