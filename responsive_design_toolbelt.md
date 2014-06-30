@@ -1,7 +1,7 @@
-# Mobile First Design
-<p>Mobile optimization and responsive design are not just buzz words, but really important factors to consider when implementing a mockup. In most cases, clients won't be satisfied unless the application being developed looks consistent amongst the plethora of devices available in the marketplace.  </p>
+# Responsive Design Toolbelt
+Mobile optimization and responsive design are not just buzz words, but really important factors to consider when implementing a mockup. In most cases, clients won't be satisfied unless the application being developed looks consistent amongst the plethora of devices available in the marketplace.
 
-Even though tools like Twitter Bootstrap exist to make responsive design easy and efficient, often times you might want to build your own responsive design implementationwithout relying on preexisting libraries.   If anything, hand-rolling a responsive design helps to gain a better understanding of the fundamentals of responsive design and allows for more customization than frameworks like Bootstrap.
+Even though tools like Twitter Bootstrap exist to make responsive design easy and efficient, you might want to build your own responsive design implementation without relying on preexisting libraries.   If anything, hand-rolling a responsive design helps to gain a better understanding of the fundamentals of responsive design and allows for more customization than frameworks like Bootstrap.
 
 Here is a list of tools I use when implementing a mobile responsive design:
 
@@ -29,3 +29,15 @@ Here is a list of tools I use when implementing a mobile responsive design:
 		1.  Click on Emulate
 		1.  You might have to reload the page <br>
 		& voila, you can checkout your site's appearance on a mobile device.
+
+1.  Use percentages for widths instead of fixed amounts:
+	    
+	    .matches-list-container
+	      width: 50%
+	      margin: 0 auto
+	      min-width: 380px
+	      display: inline-block
+	      padding-left: 10em
+	- but don't forget to set a minimum width! Otherwise, your boxes will just keep shrinking.
+
+Armed with these tools, implementing a responsive task becomes less of a mysterious and daunting task.  Gaining experience with implementing responsive design without relying on frameworks like Bootstrap is also important. 
