@@ -1,9 +1,11 @@
 # Accessing Page Specific Javascript in Rails
 
 
-The Rails Asset Pipeline, which compiles all of the Javascript into a single "application.js" file, can be problematic when trying to access page-specific Javascript.  Oftentimes, a variable which has been defined on one page will be undefined on another, rendering our code useless.  
+The Rails Asset Pipeline, which compiles all of the Javascript into a single "application.js" file, can be problematic when trying to implement page-specific Javascript.  Oftentimes, a variable which has been defined on one page will be undefined on another, rendering our code useless.  
 
-Using "body" tag element class names is a convenient and simple solution I used in a recent project to access page-specific Javascript without undoing the Rails Asset Pipeline infrastructure.
+Giving class names which reference the application controller and action to "body" tag element of each page is a convenient and simple solution I used in a recent project to utilize page-specific Javascript without undoing the Rails Asset Pipeline infrastructure.
+
+Here are the main steps to making that happen:
 
 
 1.  In the head of the HTML document, give the "body" tag a class name which references the controller and action contained in the parameters of the HTTP request being processed:
@@ -21,7 +23,7 @@ Using "body" tag element class names is a convenient and simple solution I used 
   			}
   		})
   		
-This way, our Javascript will be compiled into a single application.js file without breaking when we need page-specific code to run.
+This way, our Javascript will be compiled into a single application.js file without breaking when we have  page-specific code to run.
 	
 	
 	
