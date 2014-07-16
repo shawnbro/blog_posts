@@ -1,28 +1,26 @@
-# Admin Functionality for your Rails Web Application
+# What's in a Namespace?
 
-Oftentimes, when doing web based application development, your client might require administrative control, such as the ability to create, update, and delete, over the content of the site. Here are the steps I follow when implementing "admin" functionality in an app:
+**What's in a namespace and why would you use one in your Rails application?**
 
-1.  Create an admin namespace, inside of 'routes.rb':
-	- If you, for example, would like your administrator to be able to have access to CRUD actions over the "products" model, the namespace would look like:
+When building a web based application, such as an e-commerce site or a photo sharing app, what the user sees and interacts with is oftentimes just the surface level of a web application's full functionality.    Clients, who may or may not be technologically savvy, will often require an interface to control the content of a site. In Ruby on Rails, namespaces come in handy when building out administrative functionality for an app.
+
+
+In the [Controller Namespaces and Routing](http://guides.rubyonrails.org/routing.html#controller-namespaces-and-routing) of the Ruby on Rails documentation, it reads, "You may wish to organize groups of controllers under a namespace. Most commonly, you might group a number of administrative controllers under an Admin:: namespace. You would place these controllers under the app/controllers/admin directory, and you can group them together in your router."  Conveniently, by placing the following, as an example, inside of your 'routes.rb' file:
 	  
 	  		namespace :admin do	  		
-    			resources :products
+    			resources :users, :orders
     		end
-    - The corresponding routes look like: 
-	    	
-		    admin_products GET    /admin/products(.:format)   admin/products#index
-	                        POST   /admin/products(.:format)  admin/products#create
-		    new_admin_product GET    /admin/products/new(.:format)   admin/products#new
-		    edit_admin_product GET    /admin/products/:id/edit(.:format) admin/products#edit
-	         
-	        admin_product GET    /admin/products/:id(.:format)  admin/products#show
-		                  PATCH  /admin/products/:id(.:format)   admin/products#update
-		                  PUT    /admin/products/:id(.:format)   admin/products#update
-		               	  DELETE /admin/products/:id(.:format)  admin/products#destroy
-		
-	- Conveniently, we now have access to routes over our "products" model only in the "admin" namespace, which will require a signing in and authentication to be accessed.
+As a result, Admin::Users Controller will have access to the following admin routes for users and orders controller.  	
     	
-1.  Generate an 'admin' model (rails g model admin email:string password_confirmation: string) & add "has_secure_password" to the 'admin.rb' file.  Implement admin authentication and authorization to access these admin pages.
-
-1.  Create a specific "Admin::ApplicationController", which the "Admin::ProductsController" inherits from.
+	    GET /admin/users	
+		GET	/admin/users/new	
+		POST	/admin/users	
+		GET	/admin/users/:id	
+		GET	/admin/users/:id/edit		
+		PATCH/PUT	/admin/users/:id		
+		DELETE	/admin/users/:id
+		
+We also have to define a subdirectory 'admin' within our controllers directory, and there define a 'users_controller.rb' as well as an 'orders_controller.rb', which inherits from 'Admin::ApplicationController" (application_controller.rb).  Namespaces are essentially reserved routes for functionality which is distinct from the main functionality of an app.
+		
+When working with admin namespaces, it is important to remember that these routes should not be accessible by common users.  For this reason, there will most likely have to be a SessionsController, as well as admin login (authorization and authentication) functionality.  Most web based applications built in Ruby on Rails will require admin functionality, at least the apps we make at DevShop do.  For this reason, it is important to gain an understanding of namespaces, what they do, and when they should be used.
 

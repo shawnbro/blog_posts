@@ -1,0 +1,13 @@
+# To Code or Not to Code?
+
+
+In a recent YouTube video produced by Code.org, President Obama, encourages our young people to spend some time this week learning how to code.  He remarks, "Don't just download the latest app, help design it."  With these words, Obama joins the ranks of a number of other entrepreneurs and celebrities encouraging computer science to play a bigger role in our nation's education system.  The idea seems to be that by learning how to write code, we will become masters over our technologies, rather than simply consumers of it.
+
+As someone who recently learned how to build web applications in an intensive twelve-week long boot-camp, I agree that gaining computer literacy beyond basic use has given me an important skill set and increased my desirability in the workplace.  However, the notion that coding is the literacy of today, as espoused by people like Obama and reinforced by the ever expanding presence of dev bootcamps, is a tentative one - because it ignores the importance of a well-rounded education in developing conscious individuals who are capable of thinking critically and creatively.
+
+My background was never in compute science - quite the opposite, in fact.  I studied music and anthropology in school, and only came to programming after gaining a strong intellectual foundation in the liberal arts.  I have found that gaining actual literacy, through reading literature, writing essays, developing arguments, and participating in discussions with my peers, has only strengthened my ability to grasp ideas which drive programming, such as object orientation and behavior inheritance.  More than just possessing the ability to write code, programmers must have, but are also often lacking in,  the ability to communicate with non-tech people, to weigh options, think critically, and be creative in solving the plethora of problems we face daily. Also, and perhaps most importantly, a good programmer knows that the process of learning never actually stops, and must know how to be resourceful in figuring out what one doesn't yet know.
+
+The bigger question is not whether computer science should play a larger role in our education system - which it clearly must - but whether we will continue to stress the importance of other programs and fields which play a part in developing our overall intellectual, critical, and creative faculties.  In public schools across the country, funding for arts and music programs continues to wane, and that is a trend which must stop.
+
+Technology is constantly present in our lives, but must be taught alongside the liberal arts, as equals, in our education system. There is no substitute to a well-rounded education in developing thoughtful and sensitive human beings.
+ 
