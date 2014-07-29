@@ -6,9 +6,9 @@ In a recent YouTube video produced by Code.org, President Obama, encourages youn
 As someone who recently learned how to build web applications in an intensive twelve-week long boot-camp, I agree that gaining computer literacy beyond basic use has changed my life.  When I graduated college with a liberal arts degree, I felt frustrated by my lack of practical skills and found it difficult to secure a fulfilling job that paid the bills. Taking a bootcamp reversed my trajectory - I enjoy the variety of challenges in writing code and work at a place with people like myself. 
 
 
- However, the notion that coding is the literacy of today, as expressed by people like Obama, is a tentative one.  For one thing, I would not have even begun to grasp the ideas which drive good programming skills without having a solid background in the liberal arts.  Steve Klabnik gave a really good talk on Object Oriented Programming and its relationship to Philosophy.
+ However, the notion that coding is the literacy of today, as expressed by people like Obama, is a tentative one.  For one thing, I would not have even begun to grasp the ideas which drive good programming skills without having a solid background in the liberal arts.  Steve Klabnik gave a really good talk on Object Oriented Programming and its relationship to Philosophy, which really just touches the surface.  Who knows just how deep the connection runs, or what new philosophies have and will emerge as a result of spreading coding literacy.
  
-Gaining real literacy, through writing, developing arguments, and thinking critically about issues, should not be sacrificed for the sake of computer literacy.  Overly stressing the importance of learning to code, at the expense of other necessary skills, ignores the importance of a well-rounded education in developing programmers who do more than just program - which is what we really want.
+Gaining real literacy, however, through writing, developing arguments, and thinking critically about issues, should not be sacrificed for the sake of computer literacy.  Overly stressing the importance of learning to code, at the expense of other necessary skills, ignores the importance of a well-rounded education in developing programmers who do more than just program - which is what we really want.
 
 Let me touch on that point a little - programmers who do more than just program.  I think that is where the beauty of knowing how to code becomes apparent - in our ability to take that new skill and apply it to other things we are interested in.
 
@@ -16,3 +16,5 @@ My background was in music composition - and my first experience in coding was t
 
 
 Ideally, learning to code ought to exist in a continuum with the development of other essential skills.  
+
+https://www.youtube.com/watch?v=gLju34xEoAg
